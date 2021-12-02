@@ -1,0 +1,7 @@
+#/bin/bash
+
+FILE="sorting.gpr"
+SPARK_NARROW=${SPARK_NARROW[@]:-}
+
+set -x
+gnatprove -P ${FILE} ${SPARK_NARROW}
